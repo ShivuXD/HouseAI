@@ -84,6 +84,8 @@ This project is not affiliated with, endorsed by, or connected to NBCUniversal, 
 
 ## Author
 
-**Shivam**(https://github.com/ShivuXD)
+[Shivam](https://github.com/ShivuXD)
+
 Built with love for differential diagnosis, caffiene, and too much git errors.
+
 " Everybody Lies "
