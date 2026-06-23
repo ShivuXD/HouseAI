@@ -1,73 +1,142 @@
-# React + TypeScript + Vite
+# HouseAI 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An A.I chatbot inspired by Dr. Gregory House from *House, M.D.*
+HouseAI recreates the sarcastic, brutally honest, witty diagnostic style of Gregory House using Gemini models and a custom personality system prompt. The goal is not to build another generic chatbot, but to create a character-driven AI experience that feels like you're actually talking to House himself.
 
-Currently, two official plugins are available:
+![HouseAI Banner](https://v0-drhouse.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+* 🩺 Dr. House personality simulation
+* 💬 Real-time conversational interface
+* ⌨️ Typewriter-style response animation
+* 🌑 Cinematic House M.D. inspired UI
+* ⚡ Powered by Google Gemini
+* 📱 Responsive design
+* 🎭 Sarcasm, wit, medical references, and House-style humor
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🖼️ Preview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+HouseAI places users inside a virtual version of House's office, creating an immersive conversational experience rather than a standard chatbot interface.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Typical interactions include:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+> User: "Why are you so rude?"
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+> HouseAI: "Because sugarcoating reality is for birthday cakes, not diagnostics."
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+
+### Backend
+
+* Node.js
+* Express.js
+
+### AI
+
+* Google Gemini 2.5 Flash
+
+### Deployment
+
+* Vercel
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/Dr.-House-AI.git
+cd Dr.-House-AI
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Install dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+### Create environment variables
+
+Create a `.env.local` file:
+
+```env
+GEMINI_API_KEY=your_api_key_here
+```
+
+### Run locally
+
+```bash
+npm run dev
+```
+
+Open:
+
+```txt
+http://localhost:3000
+```
+
+---
+
+## 📂 Project Structure
+
+```txt
+HouseAI/
+│
+├── api/
+│   └── chat.js
+│
+├── public/
+│
+├── server/
+│   ├── house.txt
+│   └── server.js
+│
+├── src/
+│   ├── components/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+│
+└── README.md
+```
+
+---
+
+## 🎯 Why This Project?
+
+Most AI chatbots focus on being helpful.
+
+HouseAI focuses on being memorable.
+
+The challenge was creating an AI that consistently maintains a strong character identity while still responding naturally to users. The project explores prompt engineering, personality simulation, conversational UX, and AI-powered web applications.
+
+---
+
+## ⚠️ Disclaimer
+
+HouseAI is a fan-made educational project inspired by the fictional character Dr. Gregory House from *House M.D.*
+
+This project is not affiliated with, endorsed by, or connected to NBCUniversal, FOX, or the creators of House M.D.
+
+---
+
+## 👨‍💻 Author
+
+**Shivam**
+
+Computer Science Engineering Student
+
+Built with caffeine, stubbornness, and far too many Git errors.
