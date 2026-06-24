@@ -17,7 +17,7 @@ HouseAI recreates the sarcastic, brutally honest, witty diagnostic style of Greg
 
 ### Frontend
 
-* React
+* React 19
 * TypeScript
 * Vite
 * Tailwind CSS
@@ -36,8 +36,8 @@ HouseAI recreates the sarcastic, brutally honest, witty diagnostic style of Greg
 ### Clone the repository
 
 ```bash
-git clone https://github.com/ShivuXD/Dr.-House-AI.git
-cd Dr.-House-AI
+git clone https://github.com/ShivuXD/HouseAI.git
+cd HouseAI
 ```
 
 ### Install dependencies
